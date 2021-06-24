@@ -1,0 +1,10 @@
+/* 
+    Para lugares especificos el formato en el nombre de la variable es:
+        "--LugarAlQuePertenecen-PC o SC" (PC: Primary Color ; SC: Secondary Color)
+    Para colores generales:root
+        "--Primary-Color" o "Secondary-Color"
+*/
+
+:root{
+    --header-pc: rgba(92, 92, 92, 0.411);
+}
