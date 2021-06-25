@@ -1,0 +1,77 @@
+main > .flex-container, section{
+    flex-direction: column;
+    align-items: center;
+    padding: .5rem 0;
+    width: 100%;
+}
+
+main .search-bar{
+    background-color: var(--header-pc);
+}
+
+main #search-input{
+    color: white;
+}
+
+.city-date{
+    font-size: .79rem;
+}
+
+.main-climate{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: .5rem 0 1rem 0;
+}
+
+.inside-main-climate{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: .5rem 0;
+    width: 100%;
+}
+
+.main-climate img{
+    height: 1.875rem;
+}
+
+.temperature{
+    display: flex;
+    align-items: flex-start;
+}
+
+#number{
+    font-size: 2rem;
+    line-height: 1.5rem;
+}
+
+#unit{
+    font-size: .6rem;
+    font-weight: 600;
+}
+
+#temperature-hourly{
+    width: 90%;
+    margin: auto;
+}
+
+.next-days>div{
+    flex-direction: column;
+    align-items: center;
+}
+
+.day{
+    text-transform: uppercase;
+    font-size: .5rem;
+}
+
+#max-temp{
+    color: black;
+}
+
+@media only screen and (min-width: 768px) {
+    main .search-bar{
+        display: none;
+    }
+}

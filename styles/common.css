@@ -16,6 +16,7 @@ body, html{
 
 .flex-container{
     display: flex;
+    max-width: 100%;
 }
 
 .search-bar{
@@ -40,4 +41,24 @@ body, html{
 
 #search-input::placeholder{ 
     color: var(--header-pc);
+}
+
+.small-letter{
+    display: block;
+    font-size: .45rem;
+    color: rgb(109, 109, 109);
+}
+
+.small-letter-simbol{
+    font-size: .9rem;
+    line-height: .7rem;
+    color: rgb(109, 109, 109);
+}
+
+.icon-climate-small{
+    width: 1.5625rem;
+}
+
+.color-text-black{
+    color: black;
 }
