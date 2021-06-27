@@ -14,11 +14,6 @@ header .flex-container{
     align-items: center;
 }
 
-#shortened-name{
-    font-weight: bold;
-    font-size: 0.8rem;
-}
-
 #expanded-name{
     display: none;
 }
@@ -34,10 +29,6 @@ header .search-bar{
 
 /* Mobile L */
 @media only screen and (min-width: 425px) {
-    #shortened-name{
-        display: none;
-    }
-
     #expanded-name{
         display: flex;
         font-weight: bold;
