@@ -1,22 +1,4 @@
-import { dayweek } from './dayweek.js'
-
-const render = (aux1, aux2) => aux1.innerHTML += (`${aux2}`)
-
-let extractProvince = (zonaHoraria) =>{
-    let flag = true
-    let result = ''
-    for(let i = 0 ; i < zonaHoraria.length ; i++){
-        if (zonaHoraria[i] == '/'){
-            flag = -flag
-            while(flag == true && i < zonaHoraria.length-1){
-                i++
-                zonaHoraria[i] == '_' ? result += ' ' : result += zonaHoraria[i]
-            }
-        }
-    }
-
-    return result
-}
+import { render,extractProvince, dayWeek } from './functions.js'
 
 export async function renderingPerHour (data) {
     
@@ -30,7 +12,7 @@ export async function renderingPerHour (data) {
 
     const render2 = `${data.city_name}, ${province}
                     <span class="small-letter">
-                        ${dayweek(informationHour.getDate())}, ${informationHour.getHours()}:00, 
+                        ${dayWeek(informationHour.getDate())}, ${informationHour.getHours()}:00, 
                         ${data.data[0].weather.description}
                     </span>`
 
