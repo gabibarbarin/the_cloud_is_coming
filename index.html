@@ -52,31 +52,16 @@
                 </form>
             </div>
     
-            <section class="flex-container">
-    
+            <section id="section-clima" class="flex-container">
                 <div class="city-date">
-                    Mar del Plata, Buenos Aires
-                    <span class="small-letter">24/06/2021 11:38</span>
+                    <!--Renderizado desde renderingPerHour.js-->
                 </div>
+                
 
-                <div class="main-climate">
-                    <div class="inside-main-climate">
-                        <div class="flex-container">
-                            <img src="./img/icons/a01d.png" alt="icon climate">
-                            <div class="temperature">
-                                <span id="number">10</span>
-                                <span id="unit">°C|°F</span>
-                            </div>
-                        </div>
+                <div id="main-climate" class="main-climate">
+                    <!-- Renderizado desde rendingPerHour.js-->
 
-                        <div class="weather conditions">
-                            <div class="small-letter">Precipitaciones: 3<span class="percentage">%</span></div>
-                            <div class="small-letter">Humedad: 82<span class="percentage">%</span></div>
-                            <div class="small-letter">Viento: a 16km/h.</div>
-                        </div>
-                    </div>
-
-                    <input list="tickmarks" type="range" id="temperature-hourly" step="1" min="0" max="24">
+                    <!--<input list="tickmarks" type="range" id="temperature-hourly" step="1" min="0" max="24">
 
                     <datalist id="tickmarks">
                         <option value="0" label="0%">
@@ -104,93 +89,19 @@
                         <option value="22" label="22">
                         <option value="23" label="23">
                         <option value="24" label="24">
-                    </datalist>
+                    </datalist>!-->
 
                 </div>
     
                 <div class="next-days flex-container">
-                    <div class="flex-container">
-                        <span class="day">vie</span>
-                        <img class="icon-climate-small" src="./img/icons/a01d.png" alt="icon climate">
-                        <div class="flex-container">
-                            <span class="small-letter" id="max-temp">16</span>
-                            <span class="small-letter-simbol color-text-black">°</span>
-                        </div>
-                        <div class="flex-container">
-                            <span class="small-letter" id="min-temp">5</span>
-                            <span class="small-letter-simbol">°</span>
-                        </div>
-                    </div>
-
-                    <div class="flex-container">
-                        <span class="day">sab</span>
-                        <img class="icon-climate-small" src="./img/icons/a01d.png" alt="icon climate">
-                        <div class="flex-container">
-                            <span class="small-letter" id="max-temp">16</span>
-                            <span class="small-letter-simbol color-text-black">°</span>
-                        </div>
-                        <div class="flex-container">
-                            <span class="small-letter" id="min-temp">5</span>
-                            <span class="small-letter-simbol">°</span>
-                        </div>
-                    </div>
-
-                    <div class="flex-container">
-                        <span class="day">dom</span>
-                        <img class="icon-climate-small" src="./img/icons/a01d.png" alt="icon climate">
-                        <div class="flex-container">
-                            <span class="small-letter" id="max-temp">16</span>
-                            <span class="small-letter-simbol color-text-black">°</span>
-                        </div>
-                        <div class="flex-container">
-                            <span class="small-letter" id="min-temp">5</span>
-                            <span class="small-letter-simbol">°</span>
-                        </div>
-                    </div>
-
-                    <div class="flex-container">
-                        <span class="day">lun</span>
-                        <img class="icon-climate-small" src="./img/icons/a01d.png" alt="icon climate">
-                        <div class="flex-container">
-                            <span class="small-letter" id="max-temp">16</span>
-                            <span class="small-letter-simbol color-text-black">°</span>
-                        </div>
-                        <div class="flex-container">
-                            <span class="small-letter" id="min-temp">5</span>
-                            <span class="small-letter-simbol">°</span>
-                        </div>
-                    </div>
-
-                    <div class="flex-container">
-                        <span class="day">mar</span>
-                        <img class="icon-climate-small" src="./img/icons/a01d.png" alt="icon climate">
-                        <div class="flex-container">
-                            <span class="small-letter" id="max-temp">16</span>
-                            <span class="small-letter-simbol color-text-black">°</span>
-                        </div>
-                        <div class="flex-container">
-                            <span class="small-letter" id="min-temp">5</span>
-                            <span class="small-letter-simbol">°</span>
-                        </div>
-                    </div>
-
-                    <div class="flex-container">
-                        <span class="day">mie</span>
-                        <img class="icon-climate-small" src="./img/icons/a01d.png" alt="icon climate">
-                        <div class="flex-container">
-                            <span class="small-letter" id="max-temp">16</span>
-                            <span class="small-letter-simbol color-text-black">°</span>
-                        </div>
-                        <div class="flex-container">
-                            <span class="small-letter" id="min-temp">5</span>
-                            <span class="small-letter-simbol">°</span>
-                        </div>
-                    </div>
+                    <!--Renderizado desde RenderingPerDay.js-->
                 </div>
     
             </section>
         </div>
     </main>
 </div>
+
+<script type="module" src="./script/script.js"></script>
 </body>
 </html>
