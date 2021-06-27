@@ -15,6 +15,5 @@ fetch('http://api.weatherbit.io/v2.0/forecast/daily?city=Mar del Plata&lang=es&d
     .catch(err => {
         console.error("ERROR: ", err.message)
     })
-    console.log('renderizado por dia')
 
 export * from '../script.js'

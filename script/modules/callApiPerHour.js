@@ -15,6 +15,5 @@ fetch('https://api.weatherbit.io/v2.0/forecast/hourly?city=Mar del Plata&lang=es
     .catch(err => {
         console.error("ERROR: ", err.message)
     })
-    console.log('renderizado por hora')
 
 export * from '../script.js'

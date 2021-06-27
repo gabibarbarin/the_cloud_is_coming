@@ -24,14 +24,17 @@ export async function renderingPerHour (data) {
     const informationHour = new Date(data.data[0].timestamp_local)
     const cityDate = document.querySelector('.city-date')
     const mainClimate = document.querySelector('#main-climate')
+    const locationInfo = document.querySelector('#location-info')
 
-    const render1 = `${data.city_name}, ${province}
+    const render1 = `${province}, ${data.city_name} ${Math.trunc(data.data[0].temp)}°C</span>`
+
+    const render2 = `${data.city_name}, ${province}
                     <span class="small-letter">
                         ${dayweek(informationHour.getDate())}, ${informationHour.getHours()}:00, 
                         ${data.data[0].weather.description}
                     </span>`
 
-    const render2 = `<div class="inside-main-climate">
+    const render3 = `<div class="inside-main-climate">
                     <div class="flex-container">
                         <img src="./img/icons/${data.data[0].weather.icon}.png" alt="icon climate">
                         <div class="temperature">
@@ -51,8 +54,9 @@ export async function renderingPerHour (data) {
                 </div>`
 
     try{
-        await render(cityDate,render1)
-        render(mainClimate,render2)
+        await render(locationInfo,render1)
+        await render(cityDate,render2)
+        render(mainClimate,render3)
     }
     catch(error){
         console.log(console.error(error))
